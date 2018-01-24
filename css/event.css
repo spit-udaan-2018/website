@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    border:solid 1px black;
+    justify-content: center;
+}
+
+#header {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+}
+
+#header h1 {
+    padding: 0;
+}
+
+#content {
+    max-width: 80vw;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border:solid 1px black;
+}
+
+#poster {
+    width: 50vh;
+    border:solid 1px red;
+}
+
+#desc {
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+#details {
+    margin: 10px 0;
+    font-size: 0.8em;
+}
+
+#details .title {
+    font-weight: bold;
+}
+
+#details div {
+    margin: 5px 0;
+}
+
+.align{
+    margin-left: 0px;
+    text-align: left;
+}

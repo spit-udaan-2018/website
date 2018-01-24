@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+	background-size: cover;
+	background-position: center;
+	font-family: Montserrat !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+#udaanlogo {
+	position: absolute;
+	top:15%;
+	left:42%;
+	height: auto;
+	width:17%;
+	opacity: 1;
+  z-index: 999;
+	animation: pullup 1s ease-in;
+ }
+@keyframes pullup {
+ from {
+ opacity:0;
+ transform:translateY(10%);
+}
+ to {
+ opacity:1;
+}
+}
+@media only screen and (max-width: 768px) {
+    #udaanlogo {
+		top:15%;
+    left:35%;
+		width:40%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    #udaanlogo {
+        left:20%;
+		width:60%;
+    }
+}
+.logo-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+/** particles js **/
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url('../images/background.png');
+  background-size: 70%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+/* --Navbar Styling --*/
+nav{
+    position:fixed;
+    z-index: 999
+}
+a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #999999;
+}
+#menuToggle{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: 0.8
+}
+@media only screen and (max-width: 425px) {
+    #menuToggle{
+      top:20px;
+      left: 20px;
+    }
+}
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #000000;
+}
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2){
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+#menu{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    margin: -100px 0 0 -50px;
+    padding:50px;
+    padding-top: 125px;
+    background-color: #ffffff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+#menuToggle input:checked ~ ul{
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+.monument{
+  width: 30vw;
+  height: auto;
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: center;
+}
+
+.content{
+  width:50vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding :20px 30px !important;
+  justify-content: center;
+
+}
+.tab{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-poster{
+    height: 20vh;
+    width: 200px;  
+    background-color: orange;
+    margin:0px !important;
+
+}
+
+.fancy-button{
+  padding:10px;
+  border-radius: 7px;
+  margin:7px;
+  background-color:white;
+  cursor: pointer;
+}
+
+.fancy-button:hover {
+  -ms-transform: translateY(-10px); /* IE 9 */
+  -webkit-transform: translateY(-10px); /* Safari */
+  transform: translateY(-10px);
+  box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+  transition-duration: 0.7s;
+}
+
+#team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team .title {
+    text-transform: lowercase;
+    margin: 5px 0;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+#team .name {
+    text-transform: uppercase;
+    margin: 5px 0;
+     font-size: 0.8rem;
+}
+
+#vicechair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#committee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+#black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 40;
+    display: none;
+}
+
+
+/*---- Contact us page ----*/
+@media only screen and (max-width: 768px) {
+    
+    .text-align {
+        text-align: center;
+    }
+    .section-divide {
+        flex-wrap: wrap;
+    }
+    .content{
+       width:50vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+  .monument{
+    display: none;
+  }
+  .content{
+    width: 100%;
+    padding: 0px 10px !important;
+    height: auto;
+}
+    #menuToggle{
+      top:20px;
+      left: 20px;
+    }
+    #team .title, .name {
+    font-size: 0.8rem;
+  }
+  #particles-js{
+  background-size: 100%;
+  background-position: 50% 90%;
+}
+}
