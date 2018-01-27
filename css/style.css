@@ -330,3 +330,19 @@ a:hover{
   background-position: 50% 90%;
 }
 }
+  i{
+      margin: 0px 10px;
+      padding:15px;
+      border-radius: 50%
+    }
+    i:hover{
+      color: black;
+      -ms-transform: translateY(-10px); /* IE 9 */
+      -webkit-transform: translateY(-10px); /* Safari */
+      transform: translateY(-10px);
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transition-duration: 0.7s;
+    }
+    .fa-facebook-square, .fa-instagram{
+      font-size: 3em;
+    }
