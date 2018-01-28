@@ -5,12 +5,11 @@ $('.fancy-button').click(function(e) {
     var type = $(this).data('type');
     
     // for team images
-    if (type === 'team') {
         var target = $(this).data('target');
         $('#black-overlay').fadeIn();
         $('#' + target + '-img').fadeIn();
+        console.log(target);
         sessionStorage.setItem(OPEN_IMAGE, target);
-    }
 })
 
 $('.event-poster').click(function(e){

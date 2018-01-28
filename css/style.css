@@ -6,10 +6,13 @@ body {
 	background-size: cover;
 	background-position: center;
 	font-family: Montserrat !important;
-  -webkit-font-smoothing: antialiased !important;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
-
+h1,h2,h3,h4,h5,p{
+  font-weight: normal;
+}
 #udaanlogo {
 	position: absolute;
 	top:15%;
@@ -228,8 +231,8 @@ a:hover{
 }
 
 .event-poster{
-    height: 20vh;
-    width: 200px;  
+    width: 300px;  
+    height: 400px;
     background-color: orange;
     margin:0px !important;
 
@@ -269,7 +272,18 @@ a:hover{
     margin: 5px 0;
      font-size: 0.8rem;
 }
-
+.team-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 80vh;
+    max-width: 80vw;
+    margin: auto;
+    z-index: 50;
+    display: none;
+}
 #vicechair {
     display: flex;
     flex-direction: row;
@@ -357,7 +371,6 @@ a:hover{
     }
 
 .btn{
-  margin:0px;
   font-size: 1.5em;
   color: white;
   background-image: url('../images/wave_blue.png');
@@ -365,10 +378,9 @@ a:hover{
   padding: 20px 50px;
   overflow: hidden;
   background-color: #fff;
-  background-position: 0 -50%;
+  background-position: -20% -50%;
   background-repeat: repeat-x;    
-  transition: background-position .75s ease;
-  transition-duration: 1s;
+  transition: background-position 1s ease;
   width:30%;
 }
 .btn-invert {
