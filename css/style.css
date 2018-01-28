@@ -263,7 +263,6 @@ a:hover{
 #team .title {
     text-transform: lowercase;
     margin: 5px 0;
-    font-weight: 100;
     font-size: 0.8rem;
 }
 
@@ -345,8 +344,8 @@ a:hover{
       top:20px;
       left: 20px;
     }
-    #team .title, .name {
-    font-size: 0.8rem;
+    #team .title,#team .name {
+    font-size: 0.6rem;
   }
   #particles-js{
   background-size: 100%;
