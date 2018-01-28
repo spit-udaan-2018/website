@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
+@font-face{
+  font-family: Montserrat;
+  src: url(../public/fonts/Montserrat-Medium.ttf);
+}
 body {
 	background-size: cover;
 	background-position: center;
 	font-family: Montserrat !important;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
 }
 
 #udaanlogo {
@@ -293,8 +293,17 @@ a:hover{
     z-index: 40;
     display: none;
 }
+.app-info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-
+#ss{
+  width:25vh;
+  height: auto;
+}
 /*---- Contact us page ----*/
 @media only screen and (max-width: 768px) {
     
@@ -343,6 +352,30 @@ a:hover{
       box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
       transition-duration: 0.7s;
     }
-    .fa-facebook-square, .fa-instagram{
+    .fa-facebook-square, .fa-instagram,.fa-apple,.fa-android{
       font-size: 3em;
     }
+
+.btn{
+  margin:0px;
+  font-size: 1.5em;
+  color: white;
+  background-image: url('../images/wave_blue.png');
+  display: inline-block;
+  padding: 20px 50px;
+  overflow: hidden;
+  background-color: #fff;
+  background-position: 0 -50%;
+  background-repeat: repeat-x;    
+  transition: background-position .75s ease;
+  transition-duration: 1s;
+  width:30%;
+}
+.btn-invert {
+  color: #000;
+  background-color:#fff;
+}
+.btn:hover {
+  color:white;
+  background-position: 100% 50%;
+}
