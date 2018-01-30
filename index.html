@@ -13,6 +13,13 @@
 </head>
 
 <body style="margin:0px">
+  <!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="spinner">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+</div>
   <nav>
     <div id="menuToggle">
       <input type="checkbox"/>
@@ -255,10 +262,31 @@
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
+
+<script>
+$(document).ready(function() {
+//Preloader
+$(window).load(function()
+       {
+        console.log('loaded');
+        preloaderFadeOutTime = 500;
+        function hidePreloader() 
+        {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        console.log('hidden');
+        });
+});
+</script>
+
 <!-- stats.js -->
 <script src="js/lib/stats.js"></script>
 <script src="js/vanilla-tilt.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+
+
 <script>
         // More info about config & dependencies:
         // - https://github.com/hakimel/reveal.js#configuration

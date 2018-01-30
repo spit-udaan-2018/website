@@ -10,6 +10,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
 }
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: deepskyblue;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:white;
+z-index: 999999;
+}
 h1,h2,h3,h4,h5,p{
   font-weight: normal;
 }
@@ -231,7 +280,8 @@ a:hover{
 }
 
 .event-poster{
-    width: 300px;  
+    width: 240px;  
+    height: auto;
     margin:0px !important;
 }
 
