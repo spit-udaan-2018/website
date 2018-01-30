@@ -233,7 +233,6 @@ a:hover{
 .event-poster{
     width: 300px;  
     margin:0px !important;
-
 }
 
 .fancy-button{
@@ -379,6 +378,7 @@ a:hover{
   background-repeat: repeat-x;    
   transition: background-position 1s ease;
   width:30%;
+  height:50px;
 }
 .btn-invert {
   color: #000;
