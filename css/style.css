@@ -70,7 +70,8 @@ h1,h2,h3,h4,h5,p{
 	width:17%;
 	opacity: 1;
   z-index: 999;
-	animation: pullup 1s ease-in;
+	animation: pullup 2s ease-in;
+  transition-delay: 10s;
  }
 @keyframes pullup {
  from {
