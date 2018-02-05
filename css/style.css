@@ -345,7 +345,7 @@ canvas{
   background-color:#fff;
 }
 .btn:hover {
-  color:white;
+  color:white !important;
   background-position: 100% 50%;
 }
 #dev{
