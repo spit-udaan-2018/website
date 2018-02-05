@@ -192,7 +192,7 @@ canvas{
 .fancy-button{
   padding:10px;
   border-radius: 7px;
-  margin:7px;
+  margin:10px;
   background-color:white;
   cursor: pointer;
 }
@@ -355,21 +355,20 @@ canvas{
   justify-content: space-around;
 }
 .dev-image{
-  width:80px;
-  height: 80px;
+  width: 200px;
   border:solid white 2px;
   border-radius:100%;
-  background-size: cover;
+  background-color: white;
+  text-align: center !important;
 }
-#ak{
-  background-image: url('images/developers/ak.png');
+.face ,.wink{
+  width:200px;
+  height: 200px;
 }
-#ak:hover{
-  background-image: url('images/developers/akw.png');
+.dev-desc{
+  display: flex;
+  flex-direction: column;
 }
-#kt{
-  background-image: url('images/developers/kt.png');
-}
-#kt:hover{
-  background-image: url('images/developers/ktw.png');
+.wink{
+  display: none;
 }
