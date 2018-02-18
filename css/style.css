@@ -265,6 +265,34 @@ canvas{
   justify-content: center;
 }
 
+.partners{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#sponsor-container{
+    width: auto;
+    margin: 4px;
+}
+#sponsorlogo{
+    height: 100px;
+    width: auto;
+    margin:7px;
+}
+#titlesponsor{
+    height: 200px;
+    width: auto;
+    margin:10px;
+}
+#cosponsor{
+    height: 100px;
+    width:auto;
+    margin:10px;
+}
+/* Mobile Devices */
+
 #ss{
   width:100px;
   height: auto;
@@ -303,6 +331,12 @@ canvas{
   #particles-js{
   background-size: 100%;
   background-position: 50% 90%;
+}
+#sponsorlogo{
+  height: 40px;
+}
+#sponsor-container{
+  height: 40px;
 }
 }
   a{
