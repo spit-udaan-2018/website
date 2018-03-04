@@ -299,7 +299,9 @@ canvas{
 }
 /*---- Contact us page ----*/
 @media only screen and (max-width: 768px) {
-    
+    h1,h2,h3{
+      font-size: 0.5em !important;
+    }
     .text-align {
         text-align: center;
     }
